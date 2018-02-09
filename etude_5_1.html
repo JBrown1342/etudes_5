@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Etude 5_Problem 1 </title>
+  </head>
+
+  <body>
+    <div>Name: <input type="text" id="name" size="30"></div>
+    <div><input type="date" id="birthday"></div>
+    <div><button id="complete">complete</button></div>
+    <div id="output" style="display: none;">
+      <span id="your_name"></span> is <span id="age"></span> years old
+    </div>
+
+    <script>
+      let date_field = document.getElementById('birthday'),
+          done_button = document.getElementById('complete'),
+          age_field = document.getElementById('age'),
+          name_field = document.getElementById('name')
+          your_name_field = document.getElementById('your_name');
+
+          done_button.addEventListener('click', () => {
+            if (! date_field.value){
+              return;
+            }
+            if (! name_field.value){
+              return;
+            }
+            let birthdate = new Date(date_field.value),
+                now = new Date(),
+                ms = now - birthdate;
+
+            age_field.innerHTML = Math.floor(ms / (1000 * 24 * 60 * 60 * 365));
+            your_name_field.innerHTML = name_field.value;
+            document.getElementById('output').style.display = 'block';
+          });
+    </script>
+  </body>
+</html>
