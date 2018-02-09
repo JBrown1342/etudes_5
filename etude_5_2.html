@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Etude 5, Problem 2</title>
+  </head>
+  <body>
+    <div><img id="laughter" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnDSHzQffv_L00pMLPGLPd9UHjxTgLT7PJNw3I_IXtOm1fIfr9"></div>
+    <div><img id="pitchers_mound" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jHDVikmDGIPkRZbGRIS9vy7NFgLVDypiEMhszVqrkU1cgycRQw"></div>
+    <div><img id="wide_eyed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8qElA6XDkyjFrHIL1K7yNnmeNKVY_U18qASgrlitrzEH72bc"></div>
+    <div><img id="welcome" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTIJzo99hSzqy1DDrv3r5sRQ6ykO0iawdqH8AF9jipulVGSyx"></div>
+    <div><img id="desk_plant" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNctHahM7VL_bkitFALz6Zl1r0EYvZppw9_8C_DJ9EFm-E3NMHVg"></div>
+
+    <script>
+    let laugh = document.getElementById('laughter'),
+        charlie = document.getElementById('pitchers_mound'),
+        wide_eyes = document.getElementById('wide_eyed'),
+        sign = document.getElementById('welcome'),
+        facedown = document.getElementById('desk_plant');
+
+        laugh.addEventListener ('click', () => {
+          document.getElementById('laughter').style.display = 'none';
+        });
+        charlie.addEventListener ('click', () => {
+          document.getElementById('pitchers_mound').style.display = 'none';
+        });
+        wide_eyes.addEventListener ('click', () => {
+          document.getElementById('wide_eyed').style.display = 'none';
+        });
+        sign.addEventListener ('click', () => {
+          document.getElementById('welcome').style.display = 'none';
+        });
+        facedown.addEventListener ('click', () => {
+          document.getElementById('desk_plant').style.display = 'none';
+        });
+    </script>
+  </body>
+</html>
