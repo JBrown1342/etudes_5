@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Etude 5, Problem 2B</title>
+  </head>
+  <body>
+    <ul id="pics">
+      <il id="laughter"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnDSHzQffv_L00pMLPGLPd9UHjxTgLT7PJNw3I_IXtOm1fIfr9"></il>
+      <il id="pitchers_mound"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jHDVikmDGIPkRZbGRIS9vy7NFgLVDypiEMhszVqrkU1cgycRQw"></il>
+      <il id="wide_eyed"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8qElA6XDkyjFrHIL1K7yNnmeNKVY_U18qASgrlitrzEH72bc"></il>
+      <il id="welcome"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTIJzo99hSzqy1DDrv3r5sRQ6ykO0iawdqH8AF9jipulVGSyx"></il>
+      <il id="desk_plant"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNctHahM7VL_bkitFALz6Zl1r0EYvZppw9_8C_DJ9EFm-E3NMHVg"></il>
+    </ul>
+
+    <script>
+    let laugh = document.getElementById('laughter'),
+        charlie = document.getElementById('pitchers_mound'),
+        wide_eyes = document.getElementById('wide_eyed'),
+        sign = document.getElementById('welcome'),
+        facedown = document.getElementById('desk_plant'),
+        parent = document.getElementById('pics');
+
+        laugh.addEventListener ('click', () => {
+          parent.removeChild(laugh);
+        });
+        charlie.addEventListener ('click', () => {
+          parent.removeChild(charlie);
+        });
+        wide_eyes.addEventListener ('click', () => {
+          parent.removeChild(wide_eyes);
+        });
+        sign.addEventListener ('click', () => {
+          parent.removeChild(sign);
+        });
+        facedown.addEventListener ('click', () => {
+          parent.removeChild(facedown);
+        });
+    </script>
+  </body>
+</html>
