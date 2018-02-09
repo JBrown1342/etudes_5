@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html id="html">
+  <head id="head">
+    <meta id="meta" charset="utf-8">
+    <title id="title">Etude 5, Problem 3</title>
+  </head>
+
+  <body id="body">
+    <div id="ex1" style="display: none;"> Extra node 1
+      <div id="ex2"> Extra node 2
+        <div id="ex3"> Extra node 3
+        </div>
+      </div>
+    </div>
+
+    <script id="script">
+    let script = document.getElementById('script'),
+        body = document.getElementById('body'),
+        head = document.getElementById('head'),
+        title = document.getElementById('title'),
+        meta = document.getElementById('meta'),
+        html = document.getElementById('html'),
+        ex1 = document.getElementById('ex1'),
+        ex2 = document.getElementById('ex2'),
+        ex3 = document.getElementById('ex3')
+
+    function trace_node (node){
+      while (node.parentNode !== document.getElementById('html')){
+        console.log(node.parentNode);
+        node = node.parentNode;
+      }
+      return node.parentNode;
+    }
+
+    console.log(trace_node(ex3));
+    </script>
+  </body>
+</html>
